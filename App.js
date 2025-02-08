@@ -54,7 +54,7 @@ const heading = (
   <h1 className="head" tabIndex="5">
     Hello There!
   </h1>
-)
+);
 
 // React Functional Component
 //Componet-Composition <HeadingComponent />
@@ -62,7 +62,7 @@ const HeadingComponent = () => {
   return <h1 className="heading">React Functional Component</h1>;
 };
 
-const Number = 10000
+const Number = 10000;
 
 const HeadingComponent2 = () => (
   <div id="container">
@@ -73,4 +73,4 @@ const HeadingComponent2 = () => (
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<HeadingComponent2/>);
+root.render(<HeadingComponent2 />);

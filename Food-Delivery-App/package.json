@@ -1,0 +1,30 @@
+{
+  "name": "food-delivery-app",
+  "version": "1.0.0",
+  "description": "This is a Food Delivery App",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/httpMeet/React-Dev.git"
+  },
+  "keywords": [
+    "Food"
+  ],
+  "author": "Meet Gandhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/httpMeet/React-Dev/issues"
+  },
+  "homepage": "https://github.com/httpMeet/React-Dev#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
