@@ -21,40 +21,40 @@ import ReactDOM from "react-dom/client";
 const resList = {
   foodItems: [
     {
-      id:1,
+      id: 1,
       i_id: "e0839ff574213e6f35b3899ebf1fc597",
-      RestaurantName: "Chinise Wok",
-      Cuisines: ["Chinese Asian", "Desserts"],
+      RestaurantName: "Chinese Wok",
+      Cuisines: ["Chinese", "Asian", "Desserts"],
       Rating: 4.3,
       MinutesToOrder: 30,
-      CostForTwo: 400000,
+      CostForTwo: 40000,
     },
     {
-      id:2,
+      id: 2,
       i_id: "ezte2e5nxiujcqfmxg8p",
       RestaurantName: "Marky Momos",
-      Cuisines: ["Momos", "Burger", "Chinise"],
+      Cuisines: ["Momos", "Burger", "Chinese"],
       Rating: 4.5,
       MinutesToOrder: 25,
-      CostForTwo: 400000,
+      CostForTwo: 35000,
     },
     {
-        id:3,
+      id: 3,
       i_id: "teimjh7i5iredhk0vrnj",
       RestaurantName: "Amdos Kitchen",
       Cuisines: ["Tibetan", "Pan-Asian"],
       Rating: 4.5,
       MinutesToOrder: 35,
-      CostForTwo: 400000,
+      CostForTwo: 50000,
     },
     {
-        id:4,
+      id: 4,
       i_id: "0e0e9ace7068111a3a9c90b532072435",
       RestaurantName: "China Hut",
       Cuisines: ["Indian", "Spicy"],
       Rating: 4.4,
       MinutesToOrder: 25,
-      CostForTwo: 400000,
+      CostForTwo: 30000,
     },
   ],
 };
@@ -99,8 +99,8 @@ const RestaurantCard = ({ resData }) => {
       <h3>{RestaurantName}</h3>
       <h4>{Cuisines.join(", ")}</h4>
       <h4>⭐ {Rating}</h4>
-      <h4>🕒 {MinutesToOrder} minutes</h4>
-      <h4>Rs.{CostForTwo / 100}</h4>
+      <h4>🕒 {MinutesToOrder} min</h4>
+      <h4>₹ {CostForTwo / 100}</h4>
     </div>
   );
 };
@@ -119,12 +119,29 @@ const Body = () => {
   );
 };
 
+// 🟢 Footer Component
+const Footer = () => {
+  return (
+    <div className="footer">
+      <p>© 2025 Meet Gandhi.All Rights Reserved</p>
+      <ul className="footer-links">
+        <li>Privacy Policy</li>
+        <li>Terms of Service</li>
+        <li>FAQ</li>
+      </ul>
+      <p>📍 123 Street, Food City, India</p>
+      <p>📞 Contact: +91 0000000000</p>
+    </div>
+  );
+};
+
 // 🟢 App Layout Component
 const AppLayout = () => {
   return (
     <div className="app">
       <Header />
       <Body />
+      <Footer />
     </div>
   );
 };
