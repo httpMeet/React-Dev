@@ -4,9 +4,9 @@ import resList from "../utils/mockdata";
 
 const Body = () => {
   //const arr = [resList]
-   
+
   //const [listOfRestaurants, setListOfRestaurants] = arr
-    const [listOfRestaurants,setListOfRestaurants] = useState(resList)
+  const [listOfRestaurants, setListOfRestaurants] = useState(resList);
 
   //const listOfRestaurants = arr[0];
   //const setListOfRestaurants = arr[1];
