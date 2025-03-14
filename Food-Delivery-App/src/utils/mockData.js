@@ -1,114 +1,188 @@
 const resList = {
-  foodItems: [
-    {
-      id: 1,
-      i_id: "e0839ff574213e6f35b3899ebf1fc597",
-      RestaurantName: "Chinese Wok",
-      Cuisines: ["Chinese", "Asian", "Desserts"],
-      Rating: 3.4,
-      MinutesToOrder: 30,
-      CostForTwo: 40000,
-    },
-    {
-      id: 2,
-      i_id: "ezte2e5nxiujcqfmxg8p",
-      RestaurantName: "Marky Momos",
-      Cuisines: ["Momos", "Burger", "Chinese"],
-      Rating: 4.5,
-      MinutesToOrder: 25,
-      CostForTwo: 35000,
-    },
-    {
-      id: 3,
-      i_id: "teimjh7i5iredhk0vrnj",
-      RestaurantName: "Amdos Kitchen",
-      Cuisines: ["Tibetan", "Pan-Asian"],
-      Rating: 3.5,
-      MinutesToOrder: 35,
-      CostForTwo: 50000,
-    },
-    {
-      id: 4,
-      i_id: "0e0e9ace7068111a3a9c90b532072435",
-      RestaurantName: "China Hut",
-      Cuisines: ["Indian", "Spicy"],
-      Rating: 4.4,
-      MinutesToOrder: 25,
-      CostForTwo: 30000,
-    },
-    {
-      id: 5,
-      i_id: "4dab63d9851972cbe2abaf8c85755e83",
-      RestaurantName: "Wakka Makka Chinese",
-      Cuisines: ["Chinese", "Thai", "Asian"],
-      Rating: 4.2,
-      MinutesToOrder: 35,
-      CostForTwo: 1000000,
-    },
-    {
-      id: 6,
-      i_id: "42a2e16a1f211b4bc15216b21229932f",
-      RestaurantName: "Hl Frankie",
-      Cuisines: ["Rolls & Wraps", "Snacks", "Fast Food"],
-      Rating: 4.6,
-      MinutesToOrder: 25,
-      CostForTwo: 50000,
-    },
-    {
-      id: 7,
-      i_id: "4dab63d9851972cbe2abaf8c85755e83",
-      RestaurantName: "Big Fat Monk",
-      Cuisines: ["chiniese", "Thai", "Asian"],
-      Rating: 3.3,
-      MinutesToOrder: 35,
-      CostForTwo: 1000000,
-    },
-    {
-      id: 8,
-      i_id: "e0839ff574213e6f35b3899ebf1fc597",
-      RestaurantName: "Chinese Wok",
-      Cuisines: ["Chinese", "Asian", "Desserts"],
-      Rating: 4.3,
-      MinutesToOrder: 30,
-      CostForTwo: 40000,
-    },
-    {
-      id: 9,
-      i_id: "e0839ff574213e6f35b3899ebf1fc597",
-      RestaurantName: "Chinese Wok",
-      Cuisines: ["Chinese", "Asian", "Desserts"],
-      Rating: 4.3,
-      MinutesToOrder: 30,
-      CostForTwo: 40000,
-    },
-    {
-      id: 10,
-      i_id: "4dab63d9851972cbe2abaf8c85755e83",
-      RestaurantName: "Big Fat Monk",
-      Cuisines: ["chiniese", "Thai", "Asian"],
-      Rating: 4.3,
-      MinutesToOrder: 35,
-      CostForTwo: 1000000,
-    },
-    {
-      id: 11,
-      i_id: "4dab63d9851972cbe2abaf8c85755e83",
-      RestaurantName: "Big Fat Monk",
-      Cuisines: ["chiniese", "Thai", "Asian"],
-      Rating: 4.3,
-      MinutesToOrder: 35,
-      CostForTwo: 1000000,
-    },
-    {
-      id: 12,
-      i_id: "4dab63d9851972cbe2abaf8c85755e83",
-      RestaurantName: "Big Fat Monk",
-      Cuisines: ["chiniese", "Thai", "Asian"],
-      Rating: 4.3,
-      MinutesToOrder: 35,
-      CostForTwo: 1000000,
-    },
-  ],
+  data: {
+    cards: [
+      {
+        card: {
+          card: {
+            info: {
+              id: "1",
+              cloudinaryImageId: "e0839ff574213e6f35b3899ebf1fc597",
+              name: "Chinese Wok",
+              cuisines: ["Chinese", "Asian", "Desserts"],
+              avgRating: 3.4,
+              sla: { deliveryTime: 30 },
+              costForTwo: "₹400",
+            },
+          },
+        },
+      },
+      {
+        card: {
+          card: {
+            info: {
+              id: "2",
+              cloudinaryImageId: "ezte2e5nxiujcqfmxg8p",
+              name: "Marky Momos",
+              cuisines: ["Momos", "Burger", "Chinese"],
+              avgRating: 4.5,
+              sla: { deliveryTime: 25 },
+              costForTwo: "₹350",
+            },
+          },
+        },
+      },
+      {
+        card: {
+          card: {
+            info: {
+              id: "3",
+              cloudinaryImageId: "teimjh7i5iredhk0vrnj",
+              name: "Amdos Kitchen",
+              cuisines: ["Tibetan", "Pan-Asian"],
+              avgRating: 3.5,
+              sla: { deliveryTime: 35 },
+              costForTwo: "₹500",
+            },
+          },
+        },
+      },
+      {
+        card: {
+          card: {
+            info: {
+              id: "4",
+              cloudinaryImageId: "0e0e9ace7068111a3a9c90b532072435",
+              name: "China Hut",
+              cuisines: ["Indian", "Spicy"],
+              avgRating: 4.4,
+              sla: { deliveryTime: 25 },
+              costForTwo: "₹300",
+            },
+          },
+        },
+      },
+      {
+        card: {
+          card: {
+            info: {
+              id: "5",
+              cloudinaryImageId: "4dab63d9851972cbe2abaf8c85755e83",
+              name: "Wakka Makka Chinese",
+              cuisines: ["Chinese", "Thai", "Asian"],
+              avgRating: 4.2,
+              sla: { deliveryTime: 35 },
+              costForTwo: "₹1000",
+            },
+          },
+        },
+      },
+      {
+        card: {
+          card: {
+            info: {
+              id: "6",
+              cloudinaryImageId: "42a2e16a1f211b4bc15216b21229932f",
+              name: "Hl Frankie",
+              cuisines: ["Rolls & Wraps", "Snacks", "Fast Food"],
+              avgRating: 4.6,
+              sla: { deliveryTime: 25 },
+              costForTwo: "₹500",
+            },
+          },
+        },
+      },
+      {
+        card: {
+          card: {
+            info: {
+              id: "7",
+              cloudinaryImageId: "4dab63d9851972cbe2abaf8c85755e83",
+              name: "Big Fat Monk",
+              cuisines: ["Chinese", "Thai", "Asian"],
+              avgRating: 3.3,
+              sla: { deliveryTime: 35 },
+              costForTwo: "₹10000",
+            },
+          },
+        },
+      },
+      {
+        card: {
+          card: {
+            info: {
+              id: "8",
+              cloudinaryImageId: "e0839ff574213e6f35b3899ebf1fc597",
+              name: "Chinese Wok",
+              cuisines: ["Chinese", "Asian", "Desserts"],
+              avgRating: 4.3,
+              sla: { deliveryTime: 30 },
+              costForTwo: "₹400",
+            },
+          },
+        },
+      },
+      {
+        card: {
+          card: {
+            info: {
+              id: "9",
+              cloudinaryImageId: "e0839ff574213e6f35b3899ebf1fc597",
+              name: "Chinese Wok",
+              cuisines: ["Chinese", "Asian", "Desserts"],
+              avgRating: 4.3,
+              sla: { deliveryTime: 30 },
+              costForTwo: "₹400",
+            },
+          },
+        },
+      },
+      {
+        card: {
+          card: {
+            info: {
+              id: "10",
+              cloudinaryImageId: "4dab63d9851972cbe2abaf8c85755e83",
+              name: "Big Fat Monk",
+              cuisines: ["Chinese", "Thai", "Asian"],
+              avgRating: 4.3,
+              sla: { deliveryTime: 35 },
+              costForTwo: "₹10000",
+            },
+          },
+        },
+      },
+      {
+        card: {
+          card: {
+            info: {
+              id: "11",
+              cloudinaryImageId: "4dab63d9851972cbe2abaf8c85755e83",
+              name: "Big Fat Monk",
+              cuisines: ["Chinese", "Thai", "Asian"],
+              avgRating: 4.3,
+              sla: { deliveryTime: 35 },
+              costForTwo: "₹10000",
+            },
+          },
+        },
+      },
+      {
+        card: {
+          card: {
+            info: {
+              id: "12",
+              cloudinaryImageId: "4dab63d9851972cbe2abaf8c85755e83",
+              name: "Big Fat Monk",
+              cuisines: ["Chinese", "Thai", "Asian"],
+              avgRating: 4.3,
+              sla: { deliveryTime: 35 },
+              costForTwo: "₹10000",
+            },
+          },
+        },
+      },
+    ],
+  },
 };
 
 export default resList;
